@@ -9,8 +9,10 @@
 import React from 'react';
 import LotsOfStyles from './Demo/StyleDemo';
 import {Flex, FlexDirectionBasics} from './Demo/Layout';
+import ButtonBasics from './Interaction/ButtonBasic'
+import Touchables from './Interaction/Toucheables'
 import { FixedDimensionsBasic, FlexDimensionBasics, PercentageDimensionsBasics } from './Demo/HeightWidthDemo';
-import type {Node} from 'react';
+import {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -28,6 +30,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { NavigationContainer } from '@react-navigation/native';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -90,11 +93,12 @@ const App: () => Node = () => {
     //   </ScrollView>
     // </SafeAreaView>
       
-      // <LotsOfStyles></LotsOfStyles>
-      // <FlexDimensionBasics></FlexDimensionBasics>
-      // <Flex></Flex>
-      <FlexDirectionBasics></FlexDirectionBasics>
-  
+    // <LotsOfStyles></LotsOfStyles>
+    // <FlexDimensionBasics></FlexDimensionBasics>
+    // <Flex></Flex>
+    <FlexDirectionBasics></FlexDirectionBasics>
+    // <ButtonBasics></ButtonBasics>
+    // <Touchables></Touchables>
   );
 };
 
